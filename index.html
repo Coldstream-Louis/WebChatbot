@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop up chat boxes</title>
+    <link href="style.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="synthesis.js" type="text/javascript" defer></script>
+ <script src="script.js" type="text/javascript" defer></script>
+  </head>
+
+<body>
+
+<div id="page-wrapper">
+ <h1>Chatbot Demo</h1>
+
+ <p id="msg"></p>
+
+ <!--<input type="text" name="speech-msg" id="speech-msg" x-webkit-speech>-->
+
+ <div class="option">
+  <label for="voice">Voice</label>
+  <select name="voice" id="voice"></select>
+ </div>
+ <div class="option">
+  <label for="volume">Volume</label>
+  <input type="range" min="0" max="1" step="0.1" name="volume" id="volume" value="1">
+ </div>
+ <div class="option">
+  <label for="rate">Rate</label>
+  <input type="range" min="0.1" max="10" step="0.1" name="rate" id="rate" value="1">
+ </div>
+ <div class="option">
+  <label for="pitch">Pitch</label>
+  <input type="range" min="0" max="2" step="0.1" name="pitch" id="pitch" value="1">
+ </div>
+<!--
+ <button id="speak">Speak</button>
+ <button id="search">Search Answer</button>
+ -->
+
+</div>
+
+<div class="msg_box" rel="skp">
+ <div class="msg_head">Chatbot 1 Daily Talk
+  <div class="close">x</div>
+ </div>
+ <div class="msg_wrap">
+  <div class="msg_body">
+   <div class="msg-left">Whatcha doin? </div>
+   <div class="msg-right">Chatting and stuff</div>
+   <div class="msg-left">Nice one</div> 
+   <div class="msg_push"></div>
+  </div>
+  <div class="msg_footer"><textarea class="msg_input" rows="4" id="question_1"></textarea></div>
+ </div>
+</div>
+<div class="msg_box" rel="skp1" >
+ <div class="msg_head">Chatbot 2 Professional Knowledge
+  <div class="close">x</div>
+ </div>
+ <div class="msg_wrap">
+  <div class="msg_body">
+   <div class="msg-left">What's going down?</div>
+   <div class="msg-right">stuff</div>
+   <div class="msg-left">nice</div> 
+   <div class="msg_push"></div>
+  </div>
+  <div class="msg_footer"><textarea class="msg_input" rows="4" id="question_2"></textarea></div>
+ </div>
+</div>
+
+<!--
+<div class="msg_box" style="right:570px;" rel="skp2">
+ <div class="msg_head">Lilia
+  <div class="close">x</div>
+ </div>
+ <div class="msg_wrap">
+  <div class="msg_body">
+   <div class="msg-left">What's happing? </div>
+   <div class="msg-right">Lost a leg</div>
+   <div class="msg-left">Bummer</div> 
+   <div class="msg_push"></div>
+  </div>
+  <div class="msg_footer"><textarea class="msg_input" rows="4"></textarea></div>
+ </div>
+</div>
+
+
+<div class="msg_box" style="right:830px;" rel="skp3">
+ <div class="msg_head">Mitch
+  <div class="close">x</div>
+  </div>
+ <div class="msg_wrap">
+  <div class="msg_body">
+   <div class="msg-left">What's doin? </div>
+   <div class="msg-right">Nothin</div>
+   <div class="msg-left">perfect, carry on</div> 
+   <div class="msg_push"></div>
+  </div>
+  <div class="msg_footer"><textarea class="msg_input" rows="4"></textarea></div>
+ </div>
+</div>
+
+<div class="msg_box" style="right:1090px;" rel="skp4">
+ <div class="msg_head">Kelly
+  <div class="close">x</div>
+ </div>
+ <div class="msg_wrap">
+  <div class="msg_body">
+   <div class="msg-left">Eh? </div>
+   <div class="msg-right">Shhh</div>
+   <div class="msg-left">Whatever </div> 
+   <div class="msg_push"></div>
+  </div>
+  <div class="msg_footer"><textarea class="msg_input" rows="4"></textarea></div>
+ </div>
+</div>
+-->
+
+</body>
+</html>
