@@ -37,7 +37,7 @@ $(document).ready(function(){
                  "Postman-Token": "3bd57ef1-8a68-47ed-9f06-4c4a2e14314d"
              },
              "processData": false,
-             "data": JSON.stringify({"question": "<How are you?>"})
+             "data": JSON.stringify({"question": "<"+input_value+">"})
          };
          var return_value;
          $.ajax(settings).done(function (response) {

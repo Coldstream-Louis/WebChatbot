@@ -181,3 +181,12 @@ button:active {
     background: lightskyblue;
 }
 */
+
+@media only screen and (max-width: 800px) {
+    .option{
+        max-width: 95%;
+    }
+    .msg_box{
+        max-width: 45%;
+    }
+}
