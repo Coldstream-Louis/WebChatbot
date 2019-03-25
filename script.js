@@ -55,6 +55,7 @@ $(document).ready(function(){
         var newStr = question.replace(reg1, "+")
         newStr = newStr.replace(reg2, "%3f")
         var s_url = "http://api.wolframalpha.com/v1/result?appid=WWU3PE-X7YYLRGE3W&i="+newStr;
+        /*
         var xmlhttp;
         if (window.XMLHttpRequest)
         {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -73,6 +74,20 @@ $(document).ready(function(){
         }
         xmlhttp.open("GET",s_url,false);
         xmlhttp.send();
+        return return_value;
+        */
+        var settings = {
+            "async": false,
+            "crossDomain": true,
+            "url": s_url,
+            "method": "GET",
+            "processData": false,
+        };
+        var return_value;
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            return_value = response;
+        });
         return return_value;
     }
  
