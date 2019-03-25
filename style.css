@@ -189,4 +189,7 @@ button:active {
     .msg_box{
         max-width: 45%;
     }
+    #E1, #E2{
+        max-width: 45%;
+    }
 }

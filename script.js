@@ -126,6 +126,31 @@ $(document).ready(function(){
                 }
             }
         });
+    $("#E1").click(function(){
+            var msg = $("#question_1").val();
+            $(this).val('');
+            if(msg.trim().length != 0){
+                var chatbox = $("#question_1").parents().parents().parents().attr("rel") ;
+                $('<div class="msg-right">'+msg+'</div>').insertBefore('[rel="'+chatbox+'"] .msg_push');
+                var answer = $.aa(msg);
+                console.log(answer);
+                $('<div class="msg-left">'+answer+'</div>').insertBefore('[rel="'+chatbox+'"] .msg_push');
+                speak(answer);
+                $('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+            }
+    });
+    $("#E2").click(function(){
+            var msg = $("#question_2").val();
+            $(this).val('');
+            if(msg.trim().length != 0){
+                var chatbox = $("#question_2").parents().parents().parents().attr("rel") ;
+                $('<div class="msg-right">'+msg+'</div>').insertBefore('[rel="'+chatbox+'"] .msg_push');
+                var answer = bb(msg);
+                console.log(answer);
+                $('<div class="msg-left">'+answer+'</div>').insertBefore('[rel="'+chatbox+'"] .msg_push');
+                speak(answer);
+                $('.msg_body').scrollTop($('.msg_body')[0].scrollHeight);
+            }
+    });
  
 });
-
