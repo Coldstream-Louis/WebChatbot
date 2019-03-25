@@ -101,3 +101,22 @@ document.onkeydown=function(event){
         }
     }
 };
+/*
+$('#question_1').keypress(function(e){
+    if(e && (e.keyCode==32 || e.keyCode==49 || e.keyCode==186 || e.keyCode==188 || e.keyCode==190 || e.keyCode==191)) { // 按 Esc
+        if ($('#question_1').val().length > 0) {
+            speak($('#question_1').val());
+            console.log($('#question_1').val());
+        }
+    }
+});
+
+$('#question_2').keypress(function(e){
+    if(e && (e.keyCode==32 || e.keyCode==49 || e.keyCode==186 || e.keyCode==188 || e.keyCode==190 || e.keyCode==191)) { // 按 Esc
+        if ($('#question_2').val().length > 0) {
+            speak($('#question_2').val());
+            console.log($('#question_2').val());
+        }
+    }
+});
+*/
