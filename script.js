@@ -54,7 +54,7 @@ $(document).ready(function(){
         var reg2=new RegExp(/\?/,"g");
         var newStr = question.replace(reg1, "+")
         newStr = newStr.replace(reg2, "%3f")
-        var s_url = "http://api.wolframalpha.com/v1/result?appid=WWU3PE-X7YYLRGE3W&i="+newStr;
+        var s_url = "https://api.wolframalpha.com/v1/result?appid=WWU3PE-X7YYLRGE3W&i="+newStr;
         /*
         var xmlhttp;
         if (window.XMLHttpRequest)
